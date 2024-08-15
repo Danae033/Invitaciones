@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Oculto{
+    display: none;
+}
+
+.BotonCategoria{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#ContenedorSalida{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#TextoSalida{
+    width: 45%;
+    text-align: left;
+    padding: 10px;
+}
+
+#ImagenSalida{
+    width: 45%;
+    text-align: right;
+    padding: 10px;
+}
+
+.selectable-image{
+    max-height: 200px;
+    cursor: pointer;
+    margin: 10px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.selectable-image.selected{
+    border-color: #000;
+}
+
+.generated-image{
+    max-height: 400px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.border-option{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generador de Memes/Invitaciones/Tarjetas</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Contenedor">
+        <h1>Plantillas de tarjetas de felicitación</h1>
+        
+        <div id="SeleccionCategoria">
+            <h2>Elige una categoría:</h2>
+            <button class="BotonCategoria" data-categoria="navidad">Navidad</button>
+            <button class="BotonCategoria" data-categoria="amor">San valentín</button>
+            <button class="BotonCategoria" data-categoria="padre">Día del padre</button>
+        </div>
+        
+        <div id="SeleccionImagen" class="Oculto">
+            <h2 style="width: 30%;">Elige una imagen: </h2>
+        </div>
+        
+        <div id="CreacionMensaje" class="Oculto">
+            <h2>Personaliza tu mensaje: </h2>
+            <textarea id="Mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <input type="text" id="NombreRemitente" placeholder="Remitente">
+        </div>
+        
+        <div id="OpcionesEstilo" class="Oculto">
+            <h2>Opciones de estilo:</h2>
+            <label for="ColorFondo">Color de fondo:</label>
+            <input type="color" id="ColorFondo">
+            
+            <label for="EstiloFuente">Estilo de fuente:</label>
+            <select id="EstiloFuente">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+            
+            <label for="TamanoFuente">Tamaño de fuente:</label>
+            <input type="number" id="TamanoFuente" value="16">
+            
+            <label for="ColorTexto">Color del texto:</label>
+            <input type="color" id="ColorTexto">
+            <label for="EstiloBorde">Tipo de borde:</label>
+            <select id="EstiloBorde">
+                <option value="solid">Sólido</option>
+                <option value="dashed">Discontinuo</option>
+                <option value="dotted">Punteado</option>
+                <option value="double">Doble</option>
+                <option value="groove">Ranura</option>
+            </select>
+            <label for="ColorBorde">Color del borde:</label>
+            <input type="color" id="ColorBorde">
+                
+            <label for="TamanoBorde">Tamaño del borde (px):</label>
+            <input type="number" id="TamanoBorde" value="1">
+        </div>
+
+        <button id="Generar" class="Oculto">Generar</button>
+        
+        <div id="VistaPrevia" class="Oculto">
+            <h2>Vista previa:</h2>
+            <div id="ContenedorSalida">
+                <div id="TextoSalida"></div>
+                <div id="ImagenSalida"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
